@@ -1,0 +1,11 @@
+{
+  "clubs": [
+    {
+      "clubName": "King F9S",
+      "brand": "Cobra",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    }
+  ]
+}
