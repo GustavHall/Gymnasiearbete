@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import IronForm from "./ironform.jsx";
 import HybridForm from "./hybridform.jsx";
+import FairwaywoodForm from "./fairwaywoodform.jsx";
 import DriverForm from "./driverform.jsx";
 
 function Home() {
@@ -34,7 +35,7 @@ function Home() {
             }}
             className="heroButton2"
           >
-            Hitta din hybrid
+            Hitta din Hybrid
           </button>
           <button
             onClick={() => {
@@ -42,14 +43,23 @@ function Home() {
             }}
             className="heroButton3"
           >
-            Hitta din driver
+            Hitta din Fairwaywood
+          </button>
+          <button
+            onClick={() => {
+              changeViewType(4);
+            }}
+            className="heroButton4"
+          >
+            Hitta din Driver
           </button>
         </div>
       </div>
       <div ref={questionformref}>
         {viewType === 1 && <IronForm />}
         {viewType === 2 && <HybridForm />}
-        {viewType === 3 && <DriverForm />}
+        {viewType === 3 && <FairwaywoodForm />}
+        {viewType === 4 && <DriverForm />}
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ html {
   width: 100%;
   font-size: 4rem;
   font-weight: 800;
+  font-family: sans-serif;
 }
 
 .buttonContainer {
@@ -35,10 +36,11 @@ html {
   font-weight: 600;
   padding: 1rem 2.2rem;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #e4e4e4;
+  font-family: sans-serif;
 }
 .heroButton:hover {
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .heroButton2 {
@@ -47,10 +49,11 @@ html {
   font-weight: 600;
   padding: 1rem 2.2rem;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #e4e4e4;
+  font-family: sans-serif;
 }
 .heroButton2:hover {
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .heroButton3 {
@@ -59,11 +62,24 @@ html {
   font-weight: 600;
   padding: 1rem 2.2rem;
   cursor: pointer;
+  background-color: #e4e4e4;
+  font-family: sans-serif;
+}
+.heroButton3:hover {
   background-color: #ffffff;
 }
 
-.heroButton3:hover {
-  background-color: #eeeeee;
+.heroButton4 {
+  border: 0;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  background-color: #e4e4e4;
+  font-family: sans-serif;
+}
+.heroButton4:hover {
+  background-color: #ffffff;
 }
 
 .mainWrapper {
