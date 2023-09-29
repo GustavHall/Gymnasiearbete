@@ -194,22 +194,22 @@ function HybridForm() {
               />
             </div>
             <div>
-              <label htmlFor="titleist">Titleist</label>
-              <input
-                type="radio"
-                id="titleist"
-                name="brand"
-                value="titleist"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
               <label htmlFor="cobra">Cobra</label>
               <input
                 type="radio"
                 id="cobra"
                 name="brand"
                 value="cobra"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="ping">Ping</label>
+              <input
+                type="radio"
+                id="ping"
+                name="brand"
+                value="ping"
                 onChange={handleChange}
               />
             </div>
@@ -224,52 +224,32 @@ function HybridForm() {
               />
             </div>
             <div>
+              <label htmlFor="wilson">Wilson</label>
+              <input
+                type="radio"
+                id="wilson"
+                name="brand"
+                value="wilson"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="titleist">Titleist</label>
+              <input
+                type="radio"
+                id="titleist"
+                name="brand"
+                value="titleist"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
               <label htmlFor="mizuno">Mizuno</label>
               <input
                 type="radio"
                 id="mizuno"
                 name="brand"
                 value="mizuno"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="srixon">Srixon</label>
-              <input
-                type="radio"
-                id="srixon"
-                name="brand"
-                value="srixon"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="odyssey">Odyssey</label>
-              <input
-                type="radio"
-                id="odyssey"
-                name="brand"
-                value="odyssey"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="cleveland">Cleveland</label>
-              <input
-                type="radio"
-                id="cleveland"
-                name="brand"
-                value="cleveland"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="scotty cameron">Scotty Cameron</label>
-              <input
-                type="radio"
-                id="scotty cameron"
-                name="brand"
-                value="scotty cameron"
                 onChange={handleChange}
               />
             </div>
