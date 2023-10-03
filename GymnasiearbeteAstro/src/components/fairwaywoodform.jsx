@@ -99,7 +99,7 @@ function FairwaywoodForm() {
         )}
         {question === 2 && (
           <div>
-            <label htmlFor="name">Fråga 3: Vilket handicap har du?</label>
+            <label htmlFor="name">Fråga 3: Vilket handikapp har du?</label>
             <div>
               <label htmlFor="hcp">Hcp:</label>
               <input
@@ -181,7 +181,7 @@ function FairwaywoodForm() {
         )}
         {question === 6 && (
           <div>
-            <label htmlFor="name">Fråga 7: Tyr du till något golfmärke?</label>
+            <label htmlFor="name">Fråga 7: Föredrar du något golfmärke?</label>
             <div>
               <label htmlFor="callaway">Callaway</label>
               <input

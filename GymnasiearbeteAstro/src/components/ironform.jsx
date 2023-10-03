@@ -6,7 +6,7 @@ function IronForm() {
     gender: "",
     swingspeed: "",
     hcp: "",
-    irontype: "",
+    golf_shaft_type: "",
     hold: "",
     experienced: "",
     brand: "",
@@ -99,7 +99,7 @@ function IronForm() {
         )}
         {question === 2 && (
           <div>
-            <label htmlFor="name">Fråga 3: Vilket handicap har du?</label>
+            <label htmlFor="name">Fråga 3: Vilket handikapp har du?</label>
             <div>
               <label htmlFor="hcp">Hcp:</label>
               <input
@@ -114,26 +114,34 @@ function IronForm() {
         )}
         {question === 3 && (
           <div>
-            <label htmlFor="name">
-              Fråga 4: Är du ute efter järnset eller utility järn?
-            </label>
+            <label htmlFor="name">Fråga 4: Föredrar du stål eller graft?</label>
             <div>
-              <label htmlFor="Iron set">Järnset</label>
+              <label htmlFor="steel">Stål</label>
               <input
                 type="radio"
-                id="iron set"
-                name="irontype"
-                value="iron set"
+                id="steel"
+                name="golf_shaft_type"
+                value="steel"
                 onChange={handleChange}
               />
             </div>
             <div>
-              <label htmlFor="utility iron">Utility järn</label>
+              <label htmlFor="graphite">Grafit</label>
               <input
                 type="radio"
-                id="utility iron"
-                name="iron type"
-                value="utility iron"
+                id="graphite"
+                name="golf_shaft_type"
+                value="graphite"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="both">Båda</label>
+              <input
+                type="radio"
+                id="both"
+                name="golf_shaft_type"
+                value="both"
                 onChange={handleChange}
               />
             </div>
@@ -181,7 +189,7 @@ function IronForm() {
         )}
         {question === 6 && (
           <div>
-            <label htmlFor="name">Fråga 7: Tyr du till något golfmärke?</label>
+            <label htmlFor="name">Fråga 7: Föredrar du något golfmärke?</label>
             <div>
               <label htmlFor="callaway">Callaway</label>
               <input
