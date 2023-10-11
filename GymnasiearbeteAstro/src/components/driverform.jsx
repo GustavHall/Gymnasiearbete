@@ -8,7 +8,6 @@ function DriverForm() {
     hcp: "",
     irontype: "",
     hold: "",
-    hitting: "",
     experienced: "",
     brand: "",
     range_controll: "",
@@ -115,74 +114,7 @@ function DriverForm() {
         )}
         {question === 3 && (
           <div>
-            <label htmlFor="name">
-              Fråga 4: Är du ute efter järnset eller utility järn?
-            </label>
-            <div>
-              <label htmlFor="Iron set">Järnset</label>
-              <input
-                type="radio"
-                id="iron set"
-                name="irontype"
-                value="iron set"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="utility iron">Utility järn</label>
-              <input
-                type="radio"
-                id="utility iron"
-                name="iron type"
-                value="utility iron"
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-        )}
-        {question === 4 && (
-          <div>
-            <label htmlFor="name">Fråga 5: Åt vilket håll slår du?</label>
-            <div>
-              <label htmlFor="right">Höger</label>
-              <input
-                type="radio"
-                id="right"
-                name="hold"
-                value="right"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="left">Vänster</label>
-              <input
-                type="radio"
-                id="left"
-                name="hold"
-                value="left"
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-        )}
-        {question === 5 && (
-          <div>
-            <label htmlFor="name">Fråga 6: Hur länge har du spelat golf?</label>
-            <div>
-              <label htmlFor="experienced">År/Månader/Veckor:</label>
-              <input
-                type="experienced"
-                id="experienced"
-                name="experienced"
-                value={formData.experienced}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-        )}
-        {question === 6 && (
-          <div>
-            <label htmlFor="name">Fråga 7: Föredrar du något golfmärke?</label>
+            <label htmlFor="name">Fråga 4: Föredrar du något golfmärke?</label>
             <div>
               <label htmlFor="callaway">Callaway</label>
               <input
@@ -255,10 +187,50 @@ function DriverForm() {
             </div>
           </div>
         )}
-        {question === 7 && (
+        {question === 4 && (
+          <div>
+            <label htmlFor="name">Fråga 5: Åt vilket håll slår du?</label>
+            <div>
+              <label htmlFor="right">Höger</label>
+              <input
+                type="radio"
+                id="right"
+                name="hold"
+                value="right"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="left">Vänster</label>
+              <input
+                type="radio"
+                id="left"
+                name="hold"
+                value="left"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+        )}
+        {question === 5 && (
+          <div>
+            <label htmlFor="name">Fråga 6: Hur länge har du spelat golf?</label>
+            <div>
+              <label htmlFor="experienced">År/Månader/Veckor:</label>
+              <input
+                type="experienced"
+                id="experienced"
+                name="experienced"
+                value={formData.experienced}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+        )}
+        {question === 6 && (
           <div>
             <label htmlFor="name">
-              Fråga 8: Är det viktigare för dig att slå längre eller att ha mer
+              Fråga 7: Är det viktigare för dig att slå längre eller att ha mer
               kontroll?
             </label>
             <div>
@@ -284,7 +256,7 @@ function DriverForm() {
           </div>
         )}
       </form>
-      {question < 7 ? (
+      {question < 6 ? (
         <button onClick={handleNext}>Nästa</button>
       ) : (
         <button onClick={handleSubmit}>Visa resultat</button>

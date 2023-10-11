@@ -114,7 +114,9 @@ function IronForm() {
         )}
         {question === 3 && (
           <div>
-            <label htmlFor="name">Fråga 4: Föredrar du stål eller graft?</label>
+            <label htmlFor="name">
+              Fråga 4: Föredrar du stål eller grafit?
+            </label>
             <div>
               <label htmlFor="steel">Stål</label>
               <input
