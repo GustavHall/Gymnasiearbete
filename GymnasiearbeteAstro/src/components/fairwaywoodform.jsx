@@ -279,7 +279,9 @@ function FairwaywoodForm() {
       {question < 6 ? (
         <>
           {formData[question] !== "" ? (
-            <button onClick={handleNext}>Nästa</button>
+            <button onClick={handleNext} className="buttonNästa">
+              Nästa
+            </button>
           ) : (
             <button onClick={handleNext} disabled>
               Nästa
@@ -287,9 +289,15 @@ function FairwaywoodForm() {
           )}
         </>
       ) : (
-        <button onClick={handleSubmit}>Visa resultat</button>
+        <button onClick={handleSubmit} className="buttonVisaResultat">
+          Visa resultat
+        </button>
       )}
-      <button onClick={handlePrevious} disabled={question === 0}>
+      <button
+        onClick={handlePrevious}
+        disabled={question === 0}
+        className="buttonFörgående"
+      >
         Förgående
       </button>
     </div>
