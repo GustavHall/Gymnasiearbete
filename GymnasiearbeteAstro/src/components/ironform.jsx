@@ -1,17 +1,33 @@
-import { useState } from "react";
+import * as React from "react";
+import { updateForm } from "../formStore";
 
 function IronForm() {
-  const [question, setQuestion] = useState(0);
-  const [formData, setFormData] = useState({
+  const [question, setQuestion] = React.useState(0);
+  const [selectedBrands, setselectedBrands] = React.useState([]);
+  const [formData, setFormData] = React.useState({
     gender: "",
     swingspeed: "",
     hcp: "",
-    golf_shaft_type: "",
+    irontype: "",
     hold: "",
     experienced: "",
-    brand: "",
+    brand: [],
     range_controll: "",
   });
+
+  const handleToggleBranchOptions = (e) => {
+    const value = e.target.value;
+    console.log(selectedBrands.includes(value));
+    if (selectedBrands.includes(value)) {
+      setselectedBrands((prevSelected) =>
+        prevSelected.filter((option) => option !== value)
+      );
+      event.target.checked = false;
+    } else {
+      setselectedBrands((prevSelected) => [...prevSelected, value]);
+      event.target.checked = true;
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +41,6 @@ function IronForm() {
     e.preventDefault();
     console.log("Form data submitted:", formData);
   };
-
   const handleNext = () => {
     setQuestion((prevQuestion) => prevQuestion + 1);
   };
@@ -33,6 +48,15 @@ function IronForm() {
   const handlePrevious = () => {
     setQuestion((prevQuestion) => prevQuestion - 1);
   };
+
+  React.useEffect(() => {
+    updateForm({ id: "form", formData });
+  }, [formData]);
+
+  React.useEffect(() => {
+    console.log(selectedBrands);
+    setFormData({ ...formData, brand: selectedBrands });
+  }, [selectedBrands]);
 
   return (
     <div className="mainWrapper">
@@ -99,14 +123,34 @@ function IronForm() {
         )}
         {question === 2 && (
           <div>
-            <label htmlFor="name">Fråga 3: Vilket handikapp har du?</label>
+            <label htmlFor="name">Fråga 3: Hur högt handikapp har du?</label>
             <div>
-              <label htmlFor="hcp">Hcp:</label>
+              <label htmlFor="high">Högt</label>
               <input
-                type="hcp"
-                id="hcp"
+                type="radio"
+                id="high"
                 name="hcp"
-                value={formData.hcp}
+                value="high"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="middle">Mellan</label>
+              <input
+                type="radio"
+                id="middle"
+                name="hcp"
+                value="middle"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="low">Lågt</label>
+              <input
+                type="radio"
+                id="low"
+                name="hcp"
+                value="low"
                 onChange={handleChange}
               />
             </div>
@@ -197,9 +241,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="callaway"
-                name="brand"
                 value="callaway"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -207,9 +250,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="titleist"
-                name="brand"
                 value="titleist"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -217,9 +259,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="cobra"
-                name="brand"
                 value="cobra"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -227,9 +268,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="taylormade"
-                name="brand"
                 value="taylormade"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -237,9 +277,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="mizuno"
-                name="brand"
                 value="mizuno"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -247,9 +286,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="srixon"
-                name="brand"
                 value="srixon"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
             <div>
@@ -257,29 +295,8 @@ function IronForm() {
               <input
                 type="radio"
                 id="wilson"
-                name="brand"
                 value="wilson"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="cleveland">Cleveland</label>
-              <input
-                type="radio"
-                id="cleveland"
-                name="brand"
-                value="cleveland"
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="scotty cameron">Scotty Cameron</label>
-              <input
-                type="radio"
-                id="scotty cameron"
-                name="brand"
-                value="scotty cameron"
-                onChange={handleChange}
+                onClick={handleToggleBranchOptions}
               />
             </div>
           </div>
@@ -340,5 +357,4 @@ function IronForm() {
     </div>
   );
 }
-
 export default IronForm;

@@ -2,10 +2,355 @@
   "clubs": [
     {
       "clubName": "King F9S",
+      "imageURl": "https://www.dormy.com/assets/blobs/02002A0K7_A___Black-Yellow-8733e73470.jpeg?preset=tiny&dpr=2",
+      "brand": "Cobra",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "King Tour Silver",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0J2_A-02672cf7fe.jpeg?preset=medium&dpr=2",
+      "brand": "Cobra",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "King Tour Mim Iron Set Silver Rh Mns",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0K5_A-4f219985a4.jpeg?preset=medium&dpr=2",
+      "brand": "Cobra",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "King Forged Tec Silver",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0I6_A-c0fe60f44e.jpg?preset=medium&dpr=2",
       "brand": "Cobra",
       "gender": "male",
       "hcp": "middle",
       "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "King Forged Tec X Silver",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0I8_A-adcbbc1d33.jpg?preset=medium&dpr=2",
+      "brand": "Cobra",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "King F9S",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0H1_A___Silver-Pink-3539411424.jpg?preset=medium&dpr=2",
+      "brand": "Cobra",
+      "gender": "female",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "T3000",
+      "imageURl": "https://www.dormy.com/assets/blobs/01003133_A-138559f035.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "T200",
+      "imageURl": "https://www.dormy.com/assets/blobs/01002A0I1_A-de42f76719.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "T100S",
+      "imageURl": "https://www.dormy.com/assets/blobs/01003137_A-4fc9588d0b.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "T400",
+      "imageURl": "https://www.dormy.com/assets/blobs/01003127_A-38dc3054d9.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "male",
+      "hcp": "high",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "620 CB",
+      "imageURl": "https://www.dormy.com/assets/blobs/01003124_A-59a38b7c13.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "T400 Lady",
+      "imageURl": "https://www.dormy.com/assets/blobs/01003128_A-b040a46da6.jpeg?preset=medium&dpr=2",
+      "brand": "Titleist",
+      "gender": "female",
+      "hcp": "high",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Mavrik 22 - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005429_A-f3e66f3b5d.jpg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Mavrik 22 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005431_A-7a08a6e7d1.jpeg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Mavrik 22 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005432_A-1114b84231.jpg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "female",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Paradym - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005A0A4_A-008f5ffca7.jpeg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Paradym X - Stål/Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005A0A5_A-91f199dd65.jpeg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Big Bertha Reva 23 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005A0A6_A-a01bf4cdcc.jpeg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "high",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Apex DCB 21 - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005414_A-30e8d60b80.jpg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Apex DCB 21 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01005415_A-15725e21da.jpeg?preset=medium&dpr=2",
+      "brand": "Callaway",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "M4 21 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007301_A-e7e6ac03ea.jpg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "female",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "M4 21 - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007298_A-00968a09ae.jpg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["left"]
+    },
+    {
+      "clubName": "SIM2 MAX - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007346_A-2ad97abb7d.jpg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Stealth 2 HD - Stål/Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007A0A6_A-1f0d385d5d.jpeg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "male",
+      "hcp": "high",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "P7MB - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007356_A-4c59e531e8.jpeg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Kalea - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01007324_A-60b693267f.jpeg?preset=medium&dpr=2",
+      "brand": "TaylorMade",
+      "gender": "female",
+      "hcp": "high",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "D9 5-Pw+Sw - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006632_A-54d234158d.jpeg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "D9 5-Pw - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006262_A-2271bc6470.jpeg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["left"]
+    },
+    {
+      "clubName": "Launch Pad 2 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006630_A-448e4dacdf.jpeg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "female",
+      "hcp": "high",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Staff Model CB - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006260_A-76dd6a0024.jpg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "Dynapower - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006A0A0_A-8455717b51.jpeg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "D9 Forged - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01006626_A-d5e82c8837.jpg?preset=medium&dpr=2",
+      "brand": "Wilson",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "ZX 5 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026284_A-a6da8948d8.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "ZX5 MK II - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026301_A-2942ae62b9.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "ZX 4 - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026287_A-5495ceb88d.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "ZX4 MK II - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026305_A-ff35f9afef.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "ZX4 MK II - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026304_A-bcac48dbd3.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "Z Forged II - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01026299_A-bd044e4f18.jpeg?preset=medium&dpr=2",
+      "brand": "Srixon",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "JPX 923 HM - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001491_A-819683a5d5.jpeg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "male",
+      "hcp": "low",
+      "swingDirection": ["right", "left"]
+    },
+    {
+      "clubName": "JPX 919 Hot Metal Lady - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001462_A-3fe59c931e.jpg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "female",
+      "hcp": "low",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "JPX 921 HM 5-Pw - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001480_A-447f6aa60c.jpeg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "JPX 921 HM Gr 5-Pw - Grafit",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001481_A-fc0999d848.jpeg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "JPX 921 HM 2 up 0.5 long - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001501_A-7cbe6f764b.jpeg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["right"]
+    },
+    {
+      "clubName": "JPX 919 HM - Stål",
+      "imageURl": "https://www.dormy.com/assets/blobs/01001460_A-c3b5c52c87.jpeg?preset=medium&dpr=2",
+      "brand": "Mizuno",
+      "gender": "male",
+      "hcp": "middle",
+      "swingDirection": ["left"]
     }
   ]
 }

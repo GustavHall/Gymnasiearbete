@@ -1,68 +1,27 @@
-import { useState, useRef, useEffect } from "react";
-import IronForm from "./ironform.jsx";
-import HybridForm from "./hybridform.jsx";
-import FairwaywoodForm from "./fairwaywoodform.jsx";
-import DriverForm from "./driverform.jsx";
+import * as React from "react";
+import IronForm from "./ironform";
 
-function Home() {
-  const questionformref = useRef(null);
-  const [viewType, setviewType] = useState(0);
+const scrollHalfway = () => {
+  window.scrollTo({
+    top: document.body.scrollHeight / 2.5,
+    behavior: "smooth",
+  });
+};
 
-  const changeViewType = (number) => {
-    setviewType(number);
-  };
-
-  useEffect(() => {
-    questionformref.current.scrollIntoView({ behavior: "smooth" });
-  }, [viewType]);
-
+function Wrapper() {
   return (
     <div className="App">
       <div className="heroContainer">
         <h1 className="headerTitle">Golfvett</h1>
         <div className="buttonContainer">
-          <button
-            onClick={() => {
-              changeViewType(1);
-            }}
-            className="heroButton"
-          >
+          <button className="heroButton" onClick={scrollHalfway}>
             Hitta ditt Järnset
-          </button>
-          <button
-            onClick={() => {
-              changeViewType(2);
-            }}
-            className="heroButton2"
-          >
-            Hitta din Hybrid
-          </button>
-          <button
-            onClick={() => {
-              changeViewType(3);
-            }}
-            className="heroButton3"
-          >
-            Hitta din Fairwaywood
-          </button>
-          <button
-            onClick={() => {
-              changeViewType(4);
-            }}
-            className="heroButton4"
-          >
-            Hitta din Driver
           </button>
         </div>
       </div>
-      <div ref={questionformref}>
-        {viewType === 1 && <IronForm />}
-        {viewType === 2 && <HybridForm />}
-        {viewType === 3 && <FairwaywoodForm />}
-        {viewType === 4 && <DriverForm />}
-      </div>
+      <IronForm />
     </div>
   );
 }
 
-export default Home;
+export default Wrapper;
